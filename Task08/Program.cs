@@ -6,10 +6,10 @@
 
 Console.WriteLine("Введите натуральное число");
 int numN = Convert.ToInt32(Console.ReadLine());
-int count = 1;
+int count = 2;
 if(numN < 1) Console.WriteLine("Вы ввели неверное значение");
 while (count <= numN)
 {
-    if((count % 2) == 0)Console.Write($"{count} ");
-    count++;
+    Console.Write($"{count} ");
+    count += 2;
 }
