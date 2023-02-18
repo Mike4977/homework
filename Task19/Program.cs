@@ -7,9 +7,11 @@
 // 23432 -> да
 
 
+
 Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
 int checkNumber = Check(number);
+// Console.WriteLine(checkNumber);
 
 if (checkNumber == number) Console.Write("Да");
 else Console.Write("Нет");
@@ -28,6 +30,10 @@ int Check (int num)
 
 
 
+// Console.WriteLine("Введите пятизначное число");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int checkNumber = Check(number);
+// Console.WriteLine(checkNumber);
 // if (checkNumber == number) Console.Write("Да");
 // else Console.Write("Нет");
 
