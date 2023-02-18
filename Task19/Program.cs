@@ -7,7 +7,7 @@
 // 23432 -> да
 
 
-Console.WriteLine("Введите пятизначное число");
+Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
 int checkNumber = Check(number);
 
