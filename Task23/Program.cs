@@ -14,6 +14,6 @@ void Square (int num)
 {
     for (int index = 1; index <= num; index++)
    { 
-        Console.WriteLine($"{index, 5}{index * index * index, 5}");
+        Console.WriteLine($"{index, 5}{Math.Pow(index, 3), 5}");
    }
 }
