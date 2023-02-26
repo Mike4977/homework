@@ -53,4 +53,5 @@ double maxElement = MaxElement(array);
 double minElement = MinElement(array);
 double differenceMaxMin = maxElement - minElement;
 PrintArrayDouble(array);
-Console.WriteLine($" -> {differenceMaxMin}");
+double differenceMaxMinRound = Math.Round(differenceMaxMin, 1, MidpointRounding.ToZero);
+Console.WriteLine($" -> {differenceMaxMinRound}");
