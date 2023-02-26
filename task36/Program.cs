@@ -37,7 +37,7 @@ int SumOddNumberElement(int[] arr)
     }
     return Sum;
 }
-int[] array = FillArrayRndInt(10, -10, 10);
+int[] array = FillArrayRndInt(9, -10, 10);
 int sumOddNumberElement = SumOddNumberElement(array);
 PrintArray(array);
 Console.Write($" -> {sumOddNumberElement}");
