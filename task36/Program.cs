@@ -30,12 +30,12 @@ void PrintArray(int[] arr)
 
 int SumOddNumberElement(int[] arr)
 {
-    int Sum = 0;
+    int sum = 0;
     for (int i = 1; i < arr.Length; i = i + 2)
     {
-        Sum = Sum +arr[i];
+        sum = sum +arr[i];
     }
-    return Sum;
+    return sum;
 }
 int[] array = FillArrayRndInt(9, -10, 10);
 int sumOddNumberElement = SumOddNumberElement(array);
