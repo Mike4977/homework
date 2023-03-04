@@ -8,19 +8,19 @@
 
 double x = 0;
 double y = 0;
-double b1 = Promt("Введите b1");
-double k1 = Promt("Введите k1");
-double b2 = Promt("Введите b2");
-double k2 = Promt("Введите k2");
+int b1 = Promt("Введите b1");
+int k1 = Promt("Введите k1");
+int b2 = Promt("Введите b2");
+int k2 = Promt("Введите k2");
 IntersectionPoint(b1, k1, b2, k2);
 
 
 
-double Promt(string message)
+int Promt(string message)
 {
     Console.WriteLine(message);
     string value = (Console.ReadLine());
-    double result = Convert.ToDouble(value);
+    int result = Convert.ToInt32(value);
     return result;
 }
 
@@ -32,11 +32,11 @@ void IntersectionPoint(double ba, double ka, double bb, double kb)
     // Console.WriteLine($"ka = {ka}");
     // Console.WriteLine($"kb = {kb}");
     // Console.WriteLine();
-    x = 2 / -4;
+    x = (bb - ba) / (ka - kb);
     
     Console.WriteLine(x);
 
-    y = ba * x + ka;
+    y = ba + x * ka;
     
     Console.WriteLine(y);
     // x = Math.Round(x, 1, MidpodoubleRounding.ToZero);
