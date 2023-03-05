@@ -27,37 +27,8 @@ int Promt(string message)
 
 void IntersectionPoint(double ba, double ka, double bb, double kb)
 {
-    // Console.WriteLine($"bb = {bb}");
-    // Console.WriteLine($"ba = {ba}");
-    // Console.WriteLine($"ka = {ka}");
-    // Console.WriteLine($"kb = {kb}");
-    // Console.WriteLine();
     x = (bb - ba) / (ka - kb);
-    
-    Console.WriteLine(x);
-
     y = ba + x * ka;
-    
-    Console.WriteLine(y);
-    // x = Math.Round(x, 1, MidpodoubleRounding.ToZero);
-    // y = Math.Round(y, 1, MidpodoubleRounding.ToZero);
 
-    //Console.WriteLine(x);
-    
 }
-
-// void PrdoubleArray(double[] arr)
-// {
-//      Console.Write("(");
-//     for (double i = 0; i < arr.Length; i++)
-//     {
-//         if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
-// 		else Console.Write(arr[i]);
-//     }
-//     Console.Write(")");
-// }
-
-// Console.WriteLine($"{x}{Math.Pow(index, 3), 5}");
-// Math.Round(x, 1, MidpodoubleRounding.ToZero); // Округление элементов массива 
-
-//Console.WriteLine(doubleersectionPodouble(b1, k1, b2, k2));
+Console.WriteLine($"Координаты точки пересечения прямых -> ({x}, {y})");
