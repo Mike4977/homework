@@ -52,7 +52,10 @@ void PrintElement(int[,] matrix)
 {
     int m = Promt("Введите номер строки массива");
     int n = Promt("Введите номер столбца массива");
-    if (m > matrix.GetLength(0) || n > matrix.GetLength(1)) Console.WriteLine($"{m}, {n} -> такого элемента в массиве нет");
+    if (m > matrix.GetLength(0) || n > matrix.GetLength(1) || m < 0 || n < 0)
+    {
+    Console.WriteLine($"{m}, {n} -> такого элемента в массиве нет");
+    }
     else Console.WriteLine($"{m}, {n} -> {matrix[m, n]}");
 }
 
