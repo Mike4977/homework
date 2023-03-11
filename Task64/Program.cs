@@ -11,14 +11,16 @@ Console.WriteLine();
 if(number <= 0) Console.WriteLine("Введенное число не натуральное");
 else 
 {
-    Console.Write($"N = {number} ->  ");
+    Console.Write($"N = {number} -> \"");
     NaturalNumbers(number);
 }
 
 void NaturalNumbers(int num)
 {
     if(num == 0) return;
-    Console.Write($"{num} ");
+    if (num >= 2) Console.Write($"{num}, ");
+		else Console.Write($"{num}\"");
+    
     NaturalNumbers(num - 1);
     
 }
